@@ -9,11 +9,11 @@
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer id="drawer" class="example-sidenav" mode="over">
     <h2>Select difficulty:</h2>
-    <button class="nav-button" mat-raised-button color="accent" (click)="chooseGame('easy', 0)">Easy Game</button>
+    <button class="nav-button" mat-raised-button color="accent" (click)="chooseGame('easy', 0); drawer.toggle()">Easy Game</button>
     <br>
-    <button class="nav-button" mat-raised-button color="accent" (click)="chooseGame('med', 0)">Med Game</button>
+    <button class="nav-button" mat-raised-button color="accent" (click)="chooseGame('med', 0); drawer.toggle()">Med Game</button>
     <br>
-    <button class="nav-button" mat-raised-button color="accent" (click)="chooseGame('hard', 0)">Hard Game</button>
+    <button class="nav-button" mat-raised-button color="accent" (click)="chooseGame('hard', 0); drawer.toggle()">Hard Game</button>
     <br>
   </mat-drawer>
 
