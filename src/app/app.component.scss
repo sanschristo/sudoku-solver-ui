@@ -1,0 +1,48 @@
+.sudoku-board {
+  max-height: 100vh;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+}
+
+mat-grid-list {
+  background: whitesmoke;
+  padding-bottom: 0;
+}
+
+mat-grid-tile {
+  border: 1px solid black;
+}
+
+.sudoku-square-input {
+  width: 100%;
+  background: whitesmoke;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+}
+#solve-button {
+  font-size: 3em;
+  padding: 10px;
+}
+
+.nav-button, #solve-button {
+  width: 90%;
+  margin: 5%;
+}
+
+.main-content {
+  height: 95vh;
+}
+
+h2 {
+  padding: 10%;
+  font-size: 2em;
+}
+
+#drawer {
+  width: 15%;
+  min-width: 200px;
+}
