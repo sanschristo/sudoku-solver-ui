@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:gh": "rm -rf docs && ng build --output-path docs --base-href /sudoku-solver-ui/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
