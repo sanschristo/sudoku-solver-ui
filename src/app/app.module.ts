@@ -9,6 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { NoZeroesPipe } from './no-zeroes.pipe';
 
 @NgModule({
@@ -24,7 +25,8 @@ import { NoZeroesPipe } from './no-zeroes.pipe';
         MatButtonModule,
         MatSidenavModule,
         MatToolbarModule,
-        MatIconModule
+        MatIconModule,
+        MatSlideToggleModule
     ],
   providers: [],
   bootstrap: [AppComponent]

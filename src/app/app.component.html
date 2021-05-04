@@ -15,6 +15,9 @@
     <br>
     <button class="nav-button" mat-raised-button color="accent" (click)="chooseGame('hard', 0); drawer.toggle()">Hard Game</button>
     <br>
+    <div class="nav-switch-container">
+      <mat-slide-toggle color="primary" (change)="showSteps = !showSteps" [checked]="showSteps">Show steps</mat-slide-toggle>
+    </div>
   </mat-drawer>
 
   <div class="main-content">
@@ -29,6 +32,7 @@
       </mat-grid-list>
 
       <button id="solve-button" mat-raised-button color="primary" (click)="solve()">SOLVE</button>
+      <button *ngIf="solving" id="stop-button" mat-raised-button color="warn" (click)="solving = false">STOP</button>
     </div>
   </div>
 
